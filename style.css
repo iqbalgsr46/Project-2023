@@ -1,0 +1,266 @@
+:root {
+  --bg: #0a0a0a;
+  --shadow: 0 2px rgba(0,0,0,0.5);
+  --color: rgb(255, 0, 106);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 6rem;
+  color: var(--color);
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3)!important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-item {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.layanan{
+  background-color: white;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -6rem;
+  padding-top: 10rem;
+}
+
+
+.lingkaran {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #dc3545;
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px;
+}
+
+.crop-img {
+    object-fit: cover;
+}
+
+.container-fluid {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .portofolio {
+    background-color: white;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .tentang {
+    background-color: white;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+
+  .teks {
+    flex: 0 0 48%; /* Lebar teks */
+    text-align: left; /* Rata kiri teks */
+    padding-top: 40px; /* Atur jarak di atas teks */
+    padding-left: 4px;
+  }
+
+  .gambar {
+    flex: 0 0 52%; /* Lebar gambar */
+    padding-top: 35px; /* Atur jarak di atas teks */
+    padding-bottom: 4px;
+    padding-right: 4px;
+  }
+
+  .staff {
+    background-color: white;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 7rem;
+    padding-bottom: 15rem;
+  }
+
+
+.tim img {
+    width: 250px;
+    border: 10px solid #cccccc;
+}
+
+a.social {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #333;
+    line-height: 40px;
+}
+
+.container-kontak {
+  padding-top: 2rem;
+}
+
+.container-kontak .background {
+  background: url(https://wallpaperaccess.com/full/1867010.jpg);
+  position: relative;
+  min-height: 100vh;
+  padding-top: 7rem;
+}
+
+.container-kontak .background .kontak {
+  color: #fff;
+}
+
+.copyright-bg {
+  background-color: #0a0a0a;
+  position: fixed;
+}
+
+.copyright-bg .container {
+  color: white;
+}
+
+
+
+
+/* media query */
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .mynavbar .nav-item {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+
+  .lingkaran {
+    font-size: 2rem; /* Mengatur ukuran lingkaran pada perangkat mobile */
+    height: 100px;
+    width: 100px;
+}
+
+.iconLayanan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem; /* Mengatur ukuran .iconLayanan pada perangkat mobile */
+  height: 50px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+  width: 50px; /* Sesuaikan lebar sesuai kebutuhan Anda */
+  border-radius: 50%; /* Membuat .iconLayanan menjadi lingkaran */
+  margin-left: 25px;
+}
+
+.layanan .row.pt-4 > div {
+    width: 33%; /* Mengatur lebar kolom menjadi 100% pada perangkat mobile */
+    text-align: center; /* Menengahkan teks di dalam kolom */
+}
+
+.portofolio .row.pt-4 > div {
+  width: 50%; /* Mengatur lebar kolom menjadi 100% pada perangkat mobile */
+  margin-bottom: 50px; /* Menambahkan ruang antara kolom pada perangkat mobile */
+}
+
+/* Untuk .teks */
+.tentang .teks {
+  text-align: left; /* Rata kiri teks */
+  padding-top: 32px; /* Atur jarak di atas teks */
+  padding-left: 4px;
+  width: 60%; /* Menetapkan lebar teks agar tidak terlalu lebar dan memberi ruang bagi gambar */
+  float: left; /* Menyusun elemen teks ke kiri */
+}
+
+/* Untuk .gambar */
+.tentang .gambar {
+  width: 35%; /* Menetapkan lebar gambar */
+  float: right; /* Menyusun elemen gambar ke kanan */
+  margin-left: 4px; /* Memberikan sedikit margin kiri agar ada ruang di antara teks dan gambar */
+  margin-bottom: 4px; /* Menambahkan margin bottom agar ada ruang di antara gambar dan elemen berikutnya */
+  padding-right: 4px;
+}
+
+/* Bersihkan float untuk menghindari efek sampingnya pada elemen berikutnya */
+.tentang::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
